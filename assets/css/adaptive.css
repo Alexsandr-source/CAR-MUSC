@@ -1,0 +1,258 @@
+@media only screen and (max-width: 1440px) {
+    .container-fluid {
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+
+    .car__content {
+        max-width: 70%;
+    }
+
+    .car__info {
+        font-size: 90%;
+    }
+    
+
+    .intro__container {
+        padding-top: 20%;
+    }
+
+    .container__att {
+        display: none;
+        margin-top: 10%;
+    }
+
+    .att__container {
+        padding: 4% 8%;
+    }
+
+    .our-advantages__decors {
+        display: none;
+    }
+
+    .our-advantages__colum {
+        display: flex;
+        flex-direction: column;
+        gap: 10%;
+    }
+
+}
+
+@media only screen and (max-width: 1336px) {
+    .container-fluid {
+        max-width: 1336px;
+        margin: 0 auto;
+    }
+
+    .car__content {
+        max-width: 70%;
+    }
+
+    .car__info {
+        font-size: 75%;
+    }
+
+    .intro__container {
+        padding-top: 20%;
+    }
+
+    .container__att {
+        display: none;
+        margin-top: 10%;
+    }
+
+    .att__container {
+        padding: 4% 8%;
+    }
+
+    .our-advantages__colum {
+        display: flex;
+        flex-direction: column;
+        gap: 10%;
+    }
+
+}
+
+@media only screen and (max-width: 1280px) {
+    .container-fluid {
+        max-width: 1280px;
+        margin: 0 auto;
+    }
+
+    .car__info {
+        font-size: 75%;
+    }
+
+    .our-advantages__colum {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+}
+
+@media only screen and (max-width: 1024px) {
+    .container-fluid {
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+
+    .car__info {
+        font-size: 75%;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    .container-fluid {
+        max-width: 768px;
+        margin: 0 auto;
+    }
+
+    .header__menu {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .header__list {
+        display: none;
+    }
+
+    .header__burger {
+        display: flex;
+    }
+
+    .intro__title {
+        font-size: 120px;
+    }
+
+    .intro__text {
+        font-size: 30px;
+    }
+
+    .container__achievement {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .achievement__info {
+        max-width: 100%;
+    }
+
+    .achievement__text {
+        width: 100%;
+    }
+
+    .achievements {
+        max-width: 100%;
+    }
+
+    .car__container {
+        display: none;
+    }
+
+    .car__content {
+        max-width: 70%;
+    }
+
+    .car__info {
+        font-size: 75%;
+    }
+
+    .intro__container {
+        padding-top: 20%;
+    }
+
+    .container__att {
+        display: none;
+        margin-top: 10%;
+    }
+
+    .att__container {
+        padding: 4% 8%;
+    }
+
+    .our-advantages__colum {
+        max-width: 100%;
+        gap: 30px;
+        display: flex;
+        align-items: center;
+    }
+
+    .our-advantages__container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 20%;
+        gap: 30px;
+    }
+
+    .our-advantages__scroll-bar {
+        max-width: 100%;
+    }
+
+    .scroll-bar__text {
+        max-width: 60%;
+        font-size: 13px;
+    }
+
+    .our-services__cards {
+        flex-direction: column;
+    }
+
+    .form {
+        max-width: 800px;
+    }
+
+    .form__row {
+        margin-top: 24px;
+        gap: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .info__link {
+        display: flex;
+        gap: 10px;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 140%;
+    
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+    }
+
+    .info__link img{
+        max-width: 20px;
+    }
+
+    .info__link p{
+        font-size: 13px;
+    }
+
+    .last-line__text {
+        font-size: 80%;
+    }
+
+    .last-line__nav {
+        display: none;
+    }
+
+    .last-line__nav li{
+        font-size: 120%;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .form__info {
+        margin-top: 20px;
+        gap: 30px;
+    }
+
+    .form__row {
+        flex-direction: column;
+    }
+}
