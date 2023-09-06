@@ -4,6 +4,9 @@
 	--font-family: 'ReformaGrotesk';
 	--text-color: #FFFFFF;
 	--accent-color: #DB3138;
+	--black-color: #141414;
+	--font-size-title: 20vmin;
+    --button-radius: 10px;
 }
 
 /* Reset and base styles  */
