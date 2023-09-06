@@ -1,3 +1,9 @@
+:root {
+    --font-size-title: 20vmin;
+    --button-radius: 10px;
+}
+
+
 .button {
     background: var(--accent-color);
     transition: 0.4s;
@@ -35,9 +41,6 @@
     background-color: var(--accent-color);
     transform: rotate(-45deg);
 }
-
-
-
 
 /* Header */
 
@@ -136,15 +139,43 @@
     align-items: center;
 }
 
-.intro__container button{
-    margin-top: 55px;
+.intro__button{
+    font-family: var(--font-family);
+    
+    border-radius: var(--button-radius);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 140%;
+
+    padding: 2vmin;
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 4%;
+
+    @media (hover: hover) {
+        .intro__button {
+            color: var(--text-color);
+            background-color: var(--accent-color);
+        }
+    }
+
+    @media (hover: none) {
+        .intro__button {
+            color: var(--text-color);
+            background-color: var(--accent-color);
+        }
+    }
 }
 
 .intro__title {
     font-family: var(--font-family);
     font-style: normal;
     font-weight: 700;
-    font-size: 150px;
+    font-size: var(--font-size-title);
     line-height: 125%;
 
     display: flex;
@@ -157,12 +188,15 @@
     font-family: var(--font-family);
     font-style: normal;
     font-weight: 500;
-    font-size: 40px;
+    font-size: 6vmin;
     line-height: 120%;
 
     margin-top: 4%;
 
     text-align: center;
+    @media only screen and (max-width: 480px) {
+        font-size: 7vmin;
+    }
 }
 
 /* Att */

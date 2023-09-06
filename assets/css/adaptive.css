@@ -122,14 +122,6 @@
         display: flex;
     }
 
-    .intro__title {
-        font-size: 120px;
-    }
-
-    .intro__text {
-        font-size: 30px;
-    }
-
     .container__achievement {
         flex-direction: column;
         align-items: center;
