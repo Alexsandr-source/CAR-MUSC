@@ -148,7 +148,6 @@
         max-width: 100%;
         gap: 30px;
         display: flex;
-        align-items: center;
     }
 
     .our-advantages__container {
@@ -163,13 +162,13 @@
         max-width: 100%;
     }
 
-    .our-services__sub-title {
+    /* .our-services__sub-title {
         
     }
 
     .our-services__text {
 
-    }
+    } */
 
     .scroll-bar__text {
         max-width: 60%;
