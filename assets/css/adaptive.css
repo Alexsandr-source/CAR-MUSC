@@ -84,6 +84,11 @@
         margin: 0 auto;
     }
 
+    .our-work__frame img{
+        display: inline-block;
+        width: 16.6vmin;
+        min-height: 20vmin;
+    }
 }
 
 @media only screen and (max-width: 768px) {

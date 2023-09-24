@@ -566,6 +566,7 @@
   font-weight: 600;
   font-size: 18px;
   line-height: 140%;
+  padding: 1.7vmin;
   text-align: center;
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -697,6 +698,10 @@
 
 .form__contacts {
   display: flex;
+}
+
+.form__button {
+  padding: 1.7vmin;
 }
 
 .form__contacts a:not(:last-child) {
