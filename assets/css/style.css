@@ -12,7 +12,6 @@
 }
 
 .button {
-  border-radius: var(--button-radius);
   color: var(--text-color);
   background-color: var(--accent-color);
 }
@@ -294,6 +293,11 @@
   line-height: 120%;
   letter-spacing: 0.03em;
 }
+@media only screen and (max-width: 480px) {
+  .achievement__text {
+    font-size: 3vmax;
+  }
+}
 
 .achievements {
   max-width: 50%;
@@ -322,6 +326,11 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
 }
+@media only screen and (max-width: 480px) {
+  .achievement__container p {
+    font-size: 3vmax;
+  }
+}
 .achievement__container img {
   padding-top: 25px;
   margin: 0 auto;
@@ -346,6 +355,16 @@
   letter-spacing: 0.05em;
   color: var(--accent-color);
 }
+@media only screen and (max-width: 480px) {
+  .achievement__number span {
+    font-size: 3vmax;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .achievement__number {
+    font-size: 3vmax;
+  }
+}
 
 /* Car */
 .car__container {
@@ -357,6 +376,7 @@
 }
 
 .car__button {
+  border-radius: var(--button-radius);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -367,6 +387,11 @@
   transform: rotate(-45deg);
 }
 
+@media only screen and (max-width: 768px) {
+  .car__button {
+    border-radius: 20%;
+  }
+}
 .car__button:hover {
   cursor: pointer;
 }
@@ -439,6 +464,11 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
 }
+@media only screen and (max-width: 480px) {
+  .our-advantages__title {
+    font-size: 3vmax;
+  }
+}
 
 .our-advantages__text {
   margin-top: 5%;
@@ -448,6 +478,11 @@
   font-size: 3.4vmin;
   line-height: 120%;
   letter-spacing: 0.03em;
+}
+@media only screen and (max-width: 480px) {
+  .our-advantages__text {
+    font-size: 3vmax;
+  }
 }
 
 .our-advantages__scroll-bar {
@@ -502,9 +537,15 @@
 }
 
 .our-services__button {
+  border-radius: var(--button-radius);
   padding: 1.7vmin;
 }
 
+@media only screen and (max-width: 480px) {
+  .our-services__button a {
+    font-size: 7vmin;
+  }
+}
 .our-services__button:nth-child(2) {
   background-color: #141414;
 }
@@ -546,7 +587,7 @@
   font-family: var(--font-family);
   font-style: normal;
   font-weight: 600;
-  font-size: 2.8vmin;
+  font-size: 3vmin;
   line-height: 140%;
   padding: 10px;
   text-align: center;
@@ -556,6 +597,7 @@
 
 /* Card */
 .card__button {
+  border-radius: var(--button-radius);
   max-width: 93px;
   margin-bottom: 50px;
 }

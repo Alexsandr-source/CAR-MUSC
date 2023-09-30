@@ -12,7 +12,6 @@
 }
 
 .button {
-    border-radius: var(--button-radius);
     color: var(--text-color);
     background-color: var(--accent-color);
 
@@ -311,7 +310,6 @@
     margin:6%  0 8% 0;
 }
 
-
 .achievement__text {
     width: 65%;
     font-family: var(--font-family);
@@ -320,6 +318,9 @@
     font-size: 4vmin;
     line-height: 120%;
     letter-spacing: 0.03em;
+    @media only screen and (max-width: 480px) {
+        font-size: 3vmax;
+    }
 }
 
 .achievements {
@@ -346,6 +347,9 @@
         text-align: center;
         letter-spacing: 0.05em;
         text-transform: uppercase;
+        @media only screen and (max-width: 480px) {
+            font-size: 3vmax;
+        }
     }
     & img {
         padding-top: 25px;
@@ -374,6 +378,12 @@
         letter-spacing: 0.05em;
 
         color: var(--accent-color);
+        @media only screen and (max-width: 480px) {
+            font-size: 3vmax;
+        }
+    }
+    @media only screen and (max-width: 480px) {
+        font-size: 3vmax;
     }
 }
 
@@ -388,6 +398,7 @@
 }
 
 .car__button {
+    border-radius: var(--button-radius);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -397,6 +408,12 @@
     background-color: #141414;
     border: 3px solid #DB3138;
     transform: rotate(-45deg);
+}
+
+@media only screen and (max-width: 768px) {
+    .car__button {
+        border-radius: 20%;
+    }
 }
 
 .car__button:hover {
@@ -474,6 +491,9 @@
 
     letter-spacing: 0.05em;
     text-transform: uppercase;
+    @media only screen and (max-width: 480px) {
+        font-size: 3vmax;
+    }
 }
 
 .our-advantages__text {
@@ -485,7 +505,11 @@
     line-height: 120%;
 
     letter-spacing: 0.03em;
+    @media only screen and (max-width: 480px) {
+        font-size: 3vmax;
+    }
 }
+
 
 .our-advantages__scroll-bar {
     display: flex;
@@ -545,7 +569,16 @@
 }
 
 .our-services__button {
+    border-radius: var(--button-radius);
     padding: 1.7vmin;
+}
+
+@media only screen and (max-width: 480px) {
+    .our-services__button {
+        & a {
+            font-size: 7vmin;
+        }
+    }
 }
 
 .our-services__button:nth-child(2) {
@@ -591,7 +624,7 @@
     font-family: var(--font-family);
     font-style: normal;
     font-weight: 600;
-    font-size: 2.8vmin;
+    font-size: 3vmin;
     line-height: 140%;
 
     padding: 10px;
@@ -603,6 +636,7 @@
 /* Card */
 
 .card__button {
+    border-radius: var(--button-radius);
     max-width: 93px;
     margin-bottom: 50px;
 }

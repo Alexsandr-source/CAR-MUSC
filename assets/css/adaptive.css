@@ -229,6 +229,8 @@
     }
 }
 
+/* @media only screen and (max-width: 480px) */
+
 @media only screen and (max-width: 375px) {
     .form__info {
         margin-top: 20px;
@@ -237,5 +239,11 @@
 
     .form__row {
         flex-direction: column;
+    }
+
+    
+    .car__button img {
+        width: 80%;
+        height: 80%;
     }
 }
