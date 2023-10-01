@@ -1,3 +1,5 @@
+/* move the whole fucking thing into style.scss. */
+
 @media only screen and (max-width: 1440px) {
     .container-fluid {
         max-width: 1440px;
@@ -83,12 +85,6 @@
         max-width: 1024px;
         margin: 0 auto;
     }
-
-    .our-work__frame img{
-        display: inline-block;
-        width: 16.6vmin;
-        min-height: 20vmin;
-    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -167,19 +163,6 @@
         max-width: 100%;
     }
 
-    /* .our-services__sub-title {
-        
-    }
-
-    .our-services__text {
-
-    } */
-
-    .scroll-bar__text {
-        max-width: 60%;
-        font-size: 13px;
-    }
-
     .our-services__cards {
         flex-direction: column;
     }
@@ -239,11 +222,5 @@
 
     .form__row {
         flex-direction: column;
-    }
-
-    
-    .car__button img {
-        width: 80%;
-        height: 80%;
     }
 }
