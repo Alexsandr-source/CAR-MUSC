@@ -734,6 +734,10 @@
             width: 16.6vmin;
             min-height: 20vmin;
         }
+        @media only screen and (max-width: 768px) {
+            display: inline-block;
+            height: 18vmin;
+        }
     }
 }
 
@@ -818,6 +822,17 @@
 
 .form__button {
     padding: 1.7vmin;
+    border-radius: var(--button-radius);
+
+    @media only screen and (max-width: 375px) {
+        width: 100%;
+    }
+    & a {
+        font-size: 4vmin;
+        @media only screen and (max-width: 480px) {
+            font-size: 4vmax;
+        }
+    }
 }
 
 .form__contacts a:not(:last-child) {
