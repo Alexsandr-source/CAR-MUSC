@@ -141,11 +141,14 @@
 }
 
 .intro__button{
+    width: 17vmin;
     border-radius: var(--button-radius);
     margin-top: 4%;
     color: var(--text-color);
     background-color: var(--accent-color);
-
+    @media only screen and (max-width: 768px) {
+        width: 18vmax;
+    }
     & a{
         font-family: var(--font-family);
         font-style: normal;
@@ -159,6 +162,9 @@
         justify-content: center;
         text-align: center;
         text-transform: uppercase;
+        @media only screen and (max-width: 768px) {
+            font-size: 4vmax;
+        }
     }
 }
 
@@ -587,18 +593,44 @@
 
 .our-services__button {
     border-radius: var(--button-radius);
-    padding: 1.7vmin;
+    color: var(--text-color);
+    width: 17vmin;
+    background-color: var(--accent-color);
+    @media only screen and (max-width: 480px) {
+        width: 17vmax;
+    }
     & a {
+        font-family: var(--font-family);
+        font-style: normal;
+        font-weight: 500;
         font-size: 5vmin;
+        line-height: 140%;
+
+        padding: 2vmin;
+        
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        text-transform: uppercase;
         @media only screen and (max-width: 480px) {
             font-size: 5vmax;
         }
     }
 }
 
+@media (hover: hover) {
+    .our-services__button a:hover {
+        color: var(--accent-color);
+        border-radius: 9px;
+        background-color: var(--black-color);
+    }
+}
 
-.our-services__button:nth-child(2) {
-    background-color: #141414;
+@media (hover: nove) {
+    .our-services__button a:active {
+        color: var(--accent-color);
+        background-color: var(--black-color);
+    }
 }
 
 .our-services__cards {
@@ -808,12 +840,19 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @media only screen and (max-width: 375px) {
+        flex-direction: column;
+    }
 }
 
 .form__info {
     display: flex;
     flex-direction: column;
     align-items: center;
+    @media only screen and (max-width: 375px) {
+        margin-top: 20px;
+        gap: 30px;
+    }
 }
 
 .form__contacts {
@@ -821,17 +860,43 @@
 }
 
 .form__button {
-    padding: 1.7vmin;
     border-radius: var(--button-radius);
-
+    color: var(--text-color);
+    background-color: var(--accent-color);
     @media only screen and (max-width: 375px) {
         width: 100%;
     }
     & a {
-        font-size: 4vmin;
+        font-family: var(--font-family);
+        font-style: normal;
+        font-weight: 500;
+        font-size: 5vmin;
+        line-height: 140%;
+
+        padding: 1.7vmin;
+        
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        text-transform: uppercase;
         @media only screen and (max-width: 480px) {
             font-size: 4vmax;
         }
+    }
+}
+
+@media (hover: hover) {
+    .form__button a:hover {
+        color: var(--accent-color);
+        border-radius: 9px;
+        background-color: var(--black-color);
+    }
+}
+
+@media (hover: nove) {
+    .form__button a:active {
+        color: var(--accent-color);
+        background-color: var(--black-color);
     }
 }
 

@@ -41,12 +41,27 @@ a:active {
 
 /* Links */
 
+.active {
+	background-color: var(--black-color);
+}
+
 a, a:link, a:visited  {
     /* color: inherit; */
     text-decoration: none;
     /* display: inline-block; */
 }
 
+@media (hover: hover) {
+    a:hover {
+        color: var(--accent-color);
+    }
+}
+
+@media (hover: nove) {
+    a:active {
+        color: var(--accent-color);
+    }
+}
 /* Common */
 
 aside, nav, footer, header, section, main {

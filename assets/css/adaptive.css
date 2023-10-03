@@ -211,16 +211,3 @@
         font-size: 120%;
     }
 }
-
-/* @media only screen and (max-width: 480px) */
-
-@media only screen and (max-width: 375px) {
-    .form__info {
-        margin-top: 20px;
-        gap: 30px;
-    }
-
-    .form__row {
-        flex-direction: column;
-    }
-}
