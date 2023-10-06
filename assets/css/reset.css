@@ -42,6 +42,7 @@ a:active {
 /* Links */
 
 .active {
+	color: var(--accent-color);
 	background-color: var(--black-color);
 }
 
