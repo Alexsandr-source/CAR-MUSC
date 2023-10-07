@@ -1,6 +1,13 @@
-const buttonPasting = document.getElementById('buttonPasting');
-const buttonDetailing = document.getElementById('buttonDetailing');
+const buttonPasting = document.querySelector("#buttonPasting");
+const buttonDetailing = document.querySelector("#buttonDetailing");
 
-function buttonSwitching() {
-    buttonPasting.classList.add('active');
-};
+buttonPasting.addEventListener('click', (button) => {
+    console.log("sosi");
+    buttonPasting.classList.add("active");
+    buttonDetailing.classList.remove("active")
+});
+buttonDetailing.addEventListener('click', (button) => {
+    console.log("sosi");
+    buttonDetailing.classList.add("active");
+    buttonPasting.classList.remove("active")
+});
