@@ -29,6 +29,10 @@ body {
 	background-color: #141414;
 }
 
+:hover {
+	cursor: pointer;
+}
+
 :focus,
 :active {
 	/*outline: none;*/

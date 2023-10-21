@@ -124,10 +124,6 @@
         max-width: 100%;
     }
 
-    .car__container {
-        display: none;
-    }
-
     .car__content {
         max-width: 70%;
     }

@@ -385,33 +385,33 @@
   justify-content: space-evenly;
   align-items: center;
 }
-
 .car__button {
   border-radius: var(--button-radius);
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 7vmin;
-  height: 7vmin;
+  width: 3.9vmax;
+  height: 3.9vmax;
+  padding: 0.8vmax;
   background-color: #141414;
   border: 3px solid #DB3138;
   transform: rotate(-45deg);
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 800px) {
   .car__button {
     border-radius: 20%;
     width: 7vmax;
-    height: 7vmax;
-  }
-}
-@media only screen and (max-width: 480px) {
-  .car__button {
-    width: 6vmax;
-    height: 6vmax;
+    height: 17vmax;
+    transform: rotate(0deg);
   }
 }
 .car__button img {
   transform: rotate(45deg);
+}
+@media only screen and (max-width: 800px) {
+  .car__button img {
+    transform: rotate(0deg);
+  }
 }
 @media only screen and (max-width: 480px) {
   .car__button img {
@@ -423,32 +423,65 @@
   cursor: pointer;
 }
 
-.car__content {
-  max-width: 80%;
+.slider {
+  max-height: 40%;
+  border: #e00404 solid 2px;
+  overflow: hidden;
+}
+
+.slider-line {
+  width: 70vmax;
+  height: 34vmax;
   display: flex;
-  gap: 5%;
+  justify-content: center;
+  gap: 26vmax;
+}
+
+.car__section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  gap: 5vmax;
 }
 
 .car__block {
-  display: inline;
   max-height: 23vw;
+}
+.car__block img {
+  min-width: 14vmax;
+}
+@media only screen and (max-width: 768px) {
+  .car__block img {
+    min-width: 18vmax;
+  }
 }
 
 .car__info {
   position: relative;
-  bottom: 40px;
+  bottom: 20%;
   margin: 0 auto;
   padding: 2% 1%;
-  width: 77%;
+  width: 11vmax;
   font-family: var(--font-family);
   font-style: normal;
   font-weight: 600;
-  font-size: 2vmin;
+  font-size: 1vmax;
   line-height: 140%;
   text-align: center;
   letter-spacing: 0.05em;
   text-transform: uppercase;
   background-color: var(--accent-color);
+}
+@media only screen and (max-width: 1280px) {
+  .car__info {
+    font-size: 1.4vmax;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .car__info {
+    font-size: 1.4vmax;
+  }
 }
 
 /* Our-advantages */
