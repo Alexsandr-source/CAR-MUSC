@@ -497,6 +497,40 @@
   max-width: 45%;
 }
 
+.our-advantages__button {
+  border-radius: var(--button-radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.9vmax;
+  height: 3.9vmax;
+  padding: 0.8vmax;
+  background-color: #141414;
+  border: 3px solid #DB3138;
+  transform: rotate(-45deg);
+}
+@media only screen and (max-width: 768px) {
+  .our-advantages__button {
+    border-radius: 20%;
+    width: 7vmax;
+    height: 17vmax;
+    transform: rotate(0deg);
+  }
+}
+.our-advantages__button img {
+  transform: rotate(45deg);
+}
+@media only screen and (max-width: 768px) {
+  .our-advantages__button img {
+    transform: rotate(0deg);
+  }
+}
+@media only screen and (max-width: 480px) {
+  .our-advantages__button img {
+    margin: 20px;
+  }
+}
+
 .our-advantages__info {
   max-width: 80%;
 }
