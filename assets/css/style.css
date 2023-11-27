@@ -423,12 +423,12 @@
   cursor: pointer;
 }
 
-.slider {
+.car__slider {
   max-height: 40%;
   overflow: hidden;
 }
 
-.slider-line {
+.car__slider-line {
   width: 70vmax;
   height: 34vmax;
   display: flex;
