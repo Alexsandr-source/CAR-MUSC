@@ -449,11 +449,12 @@
     overflow: hidden;
 }
 
-.car__slider-line {
+.car__slide-line {
     width: 70vmax;
     height: 34vmax;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 26vmax;
 }
 
