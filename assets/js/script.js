@@ -1,8 +1,11 @@
 const buttonPasting = document.querySelector('#buttonPasting');
 const buttonDetailing = document.querySelector('#buttonDetailing');
-const slides = document.getElementsByClassName('car__section');
-// const prevButton = document.getElementsByClassName('slide-prev');
-// const nextButton = document.getElementsByClassName('slide-next');
+const slider = document.querySelector('.car__slide-line');
+const slides = Array.from(slider.querySelectorAll('.car__section'));
+const prevButton = document.querySelector('#prevButton');
+const nextButton = document.querySelector('#nextButton');
+const slideCount = slides.length;
+let slideIndex = 0;
 
 // OUR SERVICES button //
 
@@ -18,19 +21,33 @@ buttonDetailing.addEventListener('click', (_button) => {
 
 // Slider line //
 
-for (let i = 0; i < slides.length; i++) {
-    let slide = slides[i]
-    console.log(slide);
+// Устанавливаем обработчики событий для кнопок
+
+prevButton.addEventListener('click', showPreviousSlide);
+nextButton.addEventListener('click', showNextSlide);
+
+// Функция для показа предыдущего слайда
+function showPreviousSlide() {
+    slideIndex = (slideIndex - 1 + slideCount) % slideCount;
+    updateSlider();
 }
 
-function nextButton(slide) {
-    slide++
+// Функция для показа следующего слайда
+function showNextSlide() {
+    slideIndex = (slideIndex + 1) % slideCount;
+    updateSlider();
 }
 
-// nextButton.addEventListener('click', (nextButton) => {
-    
-// });
+// Функция для обновления отображения слайдера
+function updateSlider() {
+slides.forEach((slide, index) => {
+    if (index === slideIndex) {
+        slide.style.display = 'flex';
+    } else {
+        slide.style.display = 'none';
+    }
+});
+}
 
-
-// prevButton.addEventListener('click', (_button) => {
-// });
+// Инициализация слайдера
+updateSlider();

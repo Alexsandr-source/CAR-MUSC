@@ -453,15 +453,12 @@
     width: 70vmax;
     height: 34vmax;
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
     gap: 26vmax;
 }
 
-.car__section {
+.car__section{
     width: 100%;
     display: flex;
-    justify-content: center;
     margin: auto;
     gap: 5vmax;
 }
