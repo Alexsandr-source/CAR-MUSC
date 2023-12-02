@@ -14,7 +14,6 @@
 .button {
     color: var(--text-color);
     background-color: var(--accent-color);
-
     & a{
         font-family: var(--font-family);
         font-style: normal;
@@ -27,6 +26,9 @@
         text-align: center;
         text-transform: uppercase;
     }
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 @media (hover: hover) {
@@ -34,6 +36,7 @@
         color: var(--accent-color);
         border-radius: 9px;
         background-color: var(--black-color);
+        cursor: pointer;
     }
 }
 
@@ -453,6 +456,7 @@
     width: 70vmax;
     height: 34vmax;
     display: flex;
+    justify-content: center;
     gap: 26vmax;
 }
 
@@ -656,40 +660,31 @@
     color: var(--text-color);
     width: 17vmin;
     background-color: var(--accent-color);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 5vmin;
+    line-height: 140%;
+
+    padding: 2vmin;
+    
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+
+    &:hover {
+        color: var(--accent-color);
+        background-color: var(--black-color);
+    }
+
+    &.active {
+        color: var(--accent-color);
+        background-color: var(--black-color);
+    }
+
     @media only screen and (max-width: 480px) {
         width: 17vmax;
-    }
-    & a {
-        font-family: var(--font-family);
-        font-style: normal;
-        font-weight: 500;
-        font-size: 5vmin;
-        line-height: 140%;
-
-        padding: 2vmin;
-        
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        text-transform: uppercase;
-        @media only screen and (max-width: 480px) {
-            font-size: 5vmax;
-        }
-    }
-}
-
-@media (hover: hover) {
-    .our-services__button a:hover {
-        color: var(--accent-color);
-        border-radius: 9px;
-        background-color: var(--black-color);
-    }
-}
-
-@media (hover: nove) {
-    .our-services__button a:active {
-        color: var(--accent-color);
-        background-color: var(--black-color);
+        font-size: 5vmax;
     }
 }
 

@@ -26,12 +26,16 @@
   text-align: center;
   text-transform: uppercase;
 }
+.button:hover {
+  cursor: pointer;
+}
 
 @media (hover: hover) {
   .button a:hover {
     color: var(--accent-color);
     border-radius: 9px;
     background-color: var(--black-color);
+    cursor: pointer;
   }
 }
 @media (hover: nove) {
@@ -432,6 +436,7 @@
   width: 70vmax;
   height: 34vmax;
   display: flex;
+  justify-content: center;
   gap: 26vmax;
 }
 
@@ -644,14 +649,6 @@
   color: var(--text-color);
   width: 17vmin;
   background-color: var(--accent-color);
-}
-@media only screen and (max-width: 480px) {
-  .our-services__button {
-    width: 17vmax;
-  }
-}
-.our-services__button a {
-  font-family: var(--font-family);
   font-style: normal;
   font-weight: 500;
   font-size: 5vmin;
@@ -662,25 +659,21 @@
   text-align: center;
   text-transform: uppercase;
 }
+.our-services__button:hover {
+  color: var(--accent-color);
+  background-color: var(--black-color);
+}
+.our-services__button.active {
+  color: var(--accent-color);
+  background-color: var(--black-color);
+}
 @media only screen and (max-width: 480px) {
-  .our-services__button a {
+  .our-services__button {
+    width: 17vmax;
     font-size: 5vmax;
   }
 }
 
-@media (hover: hover) {
-  .our-services__button a:hover {
-    color: var(--accent-color);
-    border-radius: 9px;
-    background-color: var(--black-color);
-  }
-}
-@media (hover: nove) {
-  .our-services__button a:active {
-    color: var(--accent-color);
-    background-color: var(--black-color);
-  }
-}
 .our-services__cards {
   display: flex;
   justify-content: center;

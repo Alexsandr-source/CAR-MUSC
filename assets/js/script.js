@@ -1,3 +1,4 @@
+const changeService = document.querySelectorAll('.our-services__button');
 const buttonPasting = document.querySelector('#buttonPasting');
 const buttonDetailing = document.querySelector('#buttonDetailing');
 const slider = document.querySelector('.car__slide-line');
@@ -6,39 +7,43 @@ const prevButton = document.querySelector('#prevButton');
 const nextButton = document.querySelector('#nextButton');
 const slideCount = slides.length;
 let slideIndex = 0;
-
 // OUR SERVICES button //
 
-buttonPasting.addEventListener('click', (_button) => {
-    buttonPasting.classList.add("active");
-    buttonDetailing.classList.remove("active")
-});
+// Set event handlers for buttons
+buttonPasting.addEventListener('click', changesServices);
+buttonDetailing.addEventListener('click', changesServices);
 
-buttonDetailing.addEventListener('click', (_button) => {
-    buttonDetailing.classList.add("active");
-    buttonPasting.classList.remove("active")
-});
+// Function for updating the buttons
+function changesServices() {
+    for(var i = 0; i < changeService.length; i++) {
+        changeService[i].classList.remove('active');
+    }
+    if (this.className === ('our-services__button active')) {
+        this.classList.remove('active')
+    } else {
+        this.classList.add('active');
+    }
+};
 
 // Slider line //
 
-// Устанавливаем обработчики событий для кнопок
-
+// Set event handlers for buttons
 prevButton.addEventListener('click', showPreviousSlide);
 nextButton.addEventListener('click', showNextSlide);
 
-// Функция для показа предыдущего слайда
+// Function for showing the previous slide
 function showPreviousSlide() {
     slideIndex = (slideIndex - 1 + slideCount) % slideCount;
     updateSlider();
 }
 
-// Функция для показа следующего слайда
+// Function for displaying the next slide
 function showNextSlide() {
     slideIndex = (slideIndex + 1) % slideCount;
     updateSlider();
 }
 
-// Функция для обновления отображения слайдера
+// Function to update the slider display
 function updateSlider() {
 slides.forEach((slide, index) => {
     if (index === slideIndex) {
@@ -49,5 +54,5 @@ slides.forEach((slide, index) => {
 });
 }
 
-// Инициализация слайдера
+// Initializing the slider
 updateSlider();
