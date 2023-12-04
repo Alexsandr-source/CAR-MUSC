@@ -3,8 +3,8 @@ const buttonPasting = document.querySelector('#buttonPasting');
 const buttonDetailing = document.querySelector('#buttonDetailing');
 const slider = document.querySelector('.car__slide-line');
 const slides = Array.from(slider.querySelectorAll('.car__section'));
-const prevButton = document.querySelector('#prevButton');
-const nextButton = document.querySelector('#nextButton');
+const prevButton = document.querySelector('#prevCarButton');
+const nextButton = document.querySelector('#nextCarButton');
 const slideCount = slides.length;
 let slideIndex = 0;
 // OUR SERVICES button //

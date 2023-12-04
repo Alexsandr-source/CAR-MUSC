@@ -257,7 +257,6 @@
 
 .att__container {
     padding: 4% 8%;
-    
 }
 
 .att__container-full {
@@ -597,12 +596,27 @@
 
 /* Scroll-bar */
 
+.scroll-bar {
+    overflow: hidden;
+}
+
+.scroll-bar-line {
+    display: flex;
+    justify-content: center;
+    gap: 26vmax;
+}
+
 .scroll-bar__text {
-    max-width: 70%;
+    min-width: 10vmax;
+    display: flex;
+    margin: auto;
+    gap: 5vmax;
+    flex-wrap: nowrap;
+    
     font-family: var(--font-family);
     font-style: normal;
     font-weight: 600;
-    font-size: 2.6vmin;
+    font-size: .8vmax;
     line-height: 140%;
 
     text-align: center;
@@ -617,10 +631,10 @@
 }
 
 .scroll-bar__content {
-    margin-top: 5vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-top: 2vmax;
 }
 
 /* Our-services */
@@ -666,7 +680,7 @@
     line-height: 140%;
 
     padding: 2vmin;
-    
+
     display: flex;
     justify-content: center;
     text-align: center;
@@ -685,6 +699,22 @@
     @media only screen and (max-width: 480px) {
         width: 17vmax;
         font-size: 5vmax;
+    }
+}
+
+@media (hover: hover) {
+    .our-services__button:hover {
+        color: var(--accent-color);
+        border-radius: 9px;
+        background-color: var(--black-color);
+        cursor: pointer;
+    }
+}
+
+@media (hover: nove) {
+    .our-services__button:active {
+        color: var(--accent-color);
+        background-color: var(--black-color);
     }
 }
 
