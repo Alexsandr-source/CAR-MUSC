@@ -596,17 +596,17 @@
 
 /* Scroll-bar */
 
-.scroll-bar {
+.our-advantages__scroll {
     overflow: hidden;
 }
 
-.scroll-bar-line {
+.our-advantages__scroll-line {
     display: flex;
     justify-content: center;
     gap: 26vmax;
 }
 
-.scroll-bar__text {
+.our-advantages__scroll-text {
     min-width: 10vmax;
     display: flex;
     margin: auto;
