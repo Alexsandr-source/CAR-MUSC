@@ -604,6 +604,11 @@
     display: flex;
     justify-content: center;
     gap: 26vmax;
+    &2 {
+        display: flex;
+        justify-content: center;
+        gap: 26vmax;
+    }
 }
 
 .our-advantages__scroll-text {
@@ -627,6 +632,29 @@
     }
     @media only screen and (max-width: 480px) {
         font-size: 2.5vmax;
+    }
+    &2 {
+        min-width: 10vmax;
+        display: flex;
+        margin: auto;
+        gap: 5vmax;
+        flex-wrap: nowrap;
+        
+        font-family: var(--font-family);
+        font-style: normal;
+        font-weight: 600;
+        font-size: .8vmax;
+        line-height: 140%;
+
+        text-align: center;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        @media only screen and (max-width: 768px) {
+            font-size: 3vmax;
+        }
+        @media only screen and (max-width: 480px) {
+            font-size: 2.5vmax;
+        }
     }
 }
 

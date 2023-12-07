@@ -593,6 +593,11 @@
   justify-content: center;
   gap: 26vmax;
 }
+.our-advantages__scroll-line2 {
+  display: flex;
+  justify-content: center;
+  gap: 26vmax;
+}
 
 .our-advantages__scroll-text {
   min-width: 10vmax;
@@ -616,6 +621,31 @@
 }
 @media only screen and (max-width: 480px) {
   .our-advantages__scroll-text {
+    font-size: 2.5vmax;
+  }
+}
+.our-advantages__scroll-text2 {
+  min-width: 10vmax;
+  display: flex;
+  margin: auto;
+  gap: 5vmax;
+  flex-wrap: nowrap;
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.8vmax;
+  line-height: 140%;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+@media only screen and (max-width: 768px) {
+  .our-advantages__scroll-text2 {
+    font-size: 3vmax;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .our-advantages__scroll-text2 {
     font-size: 2.5vmax;
   }
 }

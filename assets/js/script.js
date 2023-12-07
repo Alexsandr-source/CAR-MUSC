@@ -4,15 +4,21 @@ const buttonDetailing = document.querySelector('#buttonDetailing');
 const carSlider = document.querySelector('.car__slide-line');
 const carSlides = Array.from(carSlider.querySelectorAll('.car__section'));
 const advantagesSlider = document.querySelector('.our-advantages__scroll-line');
+const advantagesSlider2 = document.querySelector('.our-advantages__scroll-line2');
 const advantagesSlides = Array.from(advantagesSlider.querySelectorAll('.our-advantages__scroll-text'));
+const advantagesSlides2 = Array.from(advantagesSlider2.querySelectorAll('.our-advantages__scroll-text2'));
 const carPrev = document.querySelector('#prevCarButton');
 const carNext = document.querySelector('#nextCarButton');
 const advantagesPrev = document.querySelector('#prevAdvantagesButton');
 const advantagesNext = document.querySelector('#nextAdvantagesButton');
+const advantagesPrev2 = document.querySelector('#prevAdvantagesButton2');
+const advantagesNext2 = document.querySelector('#nextAdvantagesButton2');
 const carCount = carSlides.length;
 const advantagesCount = advantagesSlides.length;
+const advantagesCount2 = advantagesSlides2.length;
 let carIndex = 0;
 let advantagesIndex = 0;
+let advantagesIndex2 = 0;
 
 
 // OUR SERVICES button //
@@ -61,7 +67,7 @@ function updateCar() {
 updateCar();
 
 
-// advantagesSlider line //
+// AdvantagesSlider line //
 
 // Set event handlers for buttons
 advantagesPrev.addEventListener('click', showPreviousSlide);
@@ -88,3 +94,32 @@ function updateAdvantages() {
 }
 // Initializing the slider
 updateAdvantages();
+
+
+// AdvantagesSlider line 2//
+
+// Set event handlers for buttons
+advantagesPrev2.addEventListener('click', showPreviousSlide2);
+advantagesNext2.addEventListener('click', showNextSlide2);
+// Function for showing the previous slide
+function showPreviousSlide2() {
+    advantagesIndex2 = (advantagesIndex2 - 1 + advantagesCount2) % advantagesCount2;
+    updateAdvantages2();
+}
+// Function for displaying the next slide
+function showNextSlide2() {
+    advantagesIndex2 = (advantagesIndex2 + 1) % advantagesCount2;
+    updateAdvantages2();
+}
+// Function to update the slider display
+function updateAdvantages2() {
+    advantagesSlides2.forEach((slide, index) => {
+    if (index === advantagesIndex2) {
+        slide.style.display = 'flex';
+    } else {
+        slide.style.display = 'none';
+    }
+});
+}
+// Initializing the slider
+updateAdvantages2();
