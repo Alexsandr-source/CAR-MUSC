@@ -67,7 +67,7 @@ function updateCar() {
 updateCar();
 
 
-// AdvantagesSlider line //
+// advantagesSlider line //
 
 // Set event handlers for buttons
 advantagesPrev.addEventListener('click', showPreviousSlide);
@@ -123,3 +123,10 @@ function updateAdvantages2() {
 }
 // Initializing the slider
 updateAdvantages2();
+
+function checkForm(el) {
+    let userName = el.name.value;
+    console.log(userName);
+
+    return false;
+}

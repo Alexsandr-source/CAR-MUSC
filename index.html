@@ -133,7 +133,7 @@
 
         <div class="container-fluid">
             <div class="car__container">
-                <button class="button car__button" id="prevCarButton" onclick="carPrev()">
+                <button class="button car__button" id="prevCarButton">
                     <img src="./assets/img/arrow-left.svg" alt="">
                 </button>
                 <div class="car__slider">
@@ -210,7 +210,7 @@
                         </div>
                     </div>
                 </div>
-                <button class="button car__button" id="nextCarButton" onclick="carNext()">
+                <button class="button car__button" id="nextCarButton">
                     <img src="./assets/img/arrow-right.svg" alt="">
                 </button>
             </div>
@@ -261,7 +261,7 @@
                 <div class="our-advantages__scroll-bar">
                     <img src="./assets/img/Rectangle 52.png" alt="">
                     <div class="scroll-bar__content">
-                        <button class="button our-advantages__button" id="prevAdvantagesButton" onclick="advantagesPrev()">
+                        <button class="button our-advantages__button" id="prevAdvantagesButton">
                             <img src="./assets/img/arrow-left.svg" alt="">
                         </button>
                         <div class="our-advantages__scroll">
@@ -273,7 +273,7 @@
                                 <p class="our-advantages__scroll-text">5</p>
                             </div>    
                         </div>
-                        <button class="button our-advantages__button" id="nextAdvantagesButton" onclick="advantagesNext()">
+                        <button class="button our-advantages__button" id="nextAdvantagesButton">
                             <img src="./assets/img/arrow-right.svg" alt="">
                         </button>
                     </div>
@@ -334,7 +334,7 @@
                 <div class="our-advantages__scroll-bar">
                     <img src="./assets/img/Rectangle 52 (1).png" alt="">
                     <div class="scroll-bar__content">
-                        <button class="button our-advantages__button" id="prevAdvantagesButton2" onclick="advantagesPrev2()">
+                        <button class="button our-advantages__button" id="prevAdvantagesButton2">
                             <img src="./assets/img/arrow-left.svg" alt="">
                         </button>
                         <div class="our-advantages__scroll2">
@@ -346,7 +346,7 @@
                                 <p class="our-advantages__scroll-text2">5</p>
                             </div>    
                         </div>
-                        <button class="button our-advantages__button" id="nextAdvantagesButton2" onclick="advantagesNext2()">
+                        <button class="button our-advantages__button" id="nextAdvantagesButton2">
                             <img src="./assets/img/arrow-right.svg" alt="">
                         </button>
                     </div>
@@ -448,13 +448,13 @@
                         <div class="decor"></div>
                     </div>
 
-                    <form class="form" action="#" method="post">
+                    <form class="form" action="#" method="post" onsubmit="return checkForm(this)">
                             <div class="form__user">
-                                <input class="form__placeholder"  type="text" name="username" value="" placeholder="Имя" bo>
-                                <input class="form__placeholder"  type="tel" name="" value=""  placeholder="Телефон">
+                                <input class="form__placeholder"  type="text" name="userName" id="userName" placeholder="Имя" bo>
+                                <input class="form__placeholder"  type="tel" name="userPhone" value=""  placeholder="Телефон">
                             </div>
                             <div class="form__question">
-                                <textarea class="form__placeholder form__placeholder-question" name="text" placeholder="Вопрос по дизайну, тюнингу и др." id="" cols="30" rows="10"></textarea>
+                                <textarea class="form__placeholder form__placeholder-question" name="userText" placeholder="Вопрос по дизайну, тюнингу и др." id="" cols="30" rows="10"></textarea>
                                 <div class="socials-networks">
                                     <a ><img src="./assets/img/Telegram.svg" alt=""></a>
                                     <a ><img src="./assets/img/YouTube.svg" alt=""></a>
